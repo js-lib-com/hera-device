@@ -11,6 +11,10 @@ public interface Actuator extends Device
 
   void turnOFF();
 
+  void toggle();
+  
+  void setState(boolean state);
+  
   /**
    * Get switch state. If switch is not active callback is not invoked and attempt to read is recorded to supervisor.
    * 
