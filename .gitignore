@@ -13,3 +13,5 @@
 /captures
 .externalNativeBuild
 >>>>>>> branch 'master' of https://github.com/js-lib-com/android-thermostat.git
+/.classpath
+/.settings/
