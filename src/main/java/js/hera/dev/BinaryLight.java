@@ -38,7 +38,7 @@ public interface BinaryLight extends Device
 
   void toggle();
   
-  void setState(boolean state);
+  boolean setState(boolean state);
   
   /**
    * Get light bulb state. Light bulb state is determined by both wall switch and controller.
