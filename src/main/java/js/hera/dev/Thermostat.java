@@ -9,7 +9,7 @@ public interface Thermostat extends Device
 {
   void setSetpoint(Double setpoint);
 
-  void updateSetpoint(Double setpoint);
+  State updateSetpoint(Double setpoint);
 
   double getSetpoint();
 
