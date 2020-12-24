@@ -9,13 +9,17 @@ public interface Thermostat extends Device
 {
   void setSetpoint(Double setpoint);
 
+  void updateSetpoint(Double setpoint);
+
   double getSetpoint();
+
+  void setTemperature(double temperature);
 
   double getTemperature();
 
-  State getState();
-
   State update();
+
+  State getState();
 
   public static class State
   {
