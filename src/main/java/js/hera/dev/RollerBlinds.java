@@ -1,6 +1,6 @@
 package js.hera.dev;
 
-public interface RollerBlinds
+public interface RollerBlinds extends Device
 {
   double open(double percent);
   
