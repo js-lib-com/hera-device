@@ -8,21 +8,27 @@ public interface LightDimmer extends Device
 
   int getValue();
 
+  State turnON();
+
+  State turnOFF();
+
+  State setState(boolean state);
+
   State getState();
 
   public static class State
   {
-    private boolean running;
+    private boolean active;
     private Integer value;
 
-    public boolean isRunning()
+    public boolean isActive()
     {
-      return running;
+      return active;
     }
 
-    public void setRunning(boolean running)
+    public void setActive(boolean active)
     {
-      this.running = running;
+      this.active = active;
     }
 
     public Integer getValue()
