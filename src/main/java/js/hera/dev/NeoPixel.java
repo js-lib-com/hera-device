@@ -2,6 +2,8 @@ package js.hera.dev;
 
 public interface NeoPixel extends Device
 {
+  String[] getActions();
+
   int setColor(int color);
   
   int getColor();

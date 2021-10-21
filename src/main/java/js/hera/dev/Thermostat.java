@@ -7,9 +7,11 @@ package js.hera.dev;
  */
 public interface Thermostat extends Device
 {
-  void setSetpoint(Double setpoint);
+  String[] getActions();
 
-  State updateSetpoint(Double setpoint);
+  State updateSetpoint(double setpoint);
+
+  void setSetpoint(double setpoint);
 
   double getSetpoint();
 
@@ -24,6 +26,7 @@ public interface Thermostat extends Device
   public static class State
   {
     private float setpoint;
+    private double hysteresis;
     private float temperature;
     private boolean running;
 
@@ -35,6 +38,16 @@ public interface Thermostat extends Device
     public void setSetpoint(float setpoint)
     {
       this.setpoint = setpoint;
+    }
+
+    public double getHysteresis()
+    {
+      return hysteresis;
+    }
+
+    public void setHysteresis(double hysteresis)
+    {
+      this.hysteresis = hysteresis;
     }
 
     public float getTemperature()
