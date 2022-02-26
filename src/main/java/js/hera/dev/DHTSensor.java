@@ -2,8 +2,6 @@ package js.hera.dev;
 
 public interface DHTSensor extends Device
 {
-  String[] getActions();
-
   double getHumidity();
 
   double getTemperature();

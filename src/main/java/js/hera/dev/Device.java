@@ -24,6 +24,8 @@ package js.hera.dev;
  */
 public interface Device
 {
+  String[] getActions();
+
   /**
    * Test if device is active. Setters on not active device are discarded and condition recorded to supervisor. Getters
    * on not active device should return null values.

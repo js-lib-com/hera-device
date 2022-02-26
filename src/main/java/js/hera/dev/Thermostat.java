@@ -7,8 +7,6 @@ package js.hera.dev;
  */
 public interface Thermostat extends Device
 {
-  String[] getActions();
-
   State updateSetpoint(double setpoint);
 
   double setSetpoint(double setpoint);

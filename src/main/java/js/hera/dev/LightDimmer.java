@@ -18,8 +18,18 @@ public interface LightDimmer extends Device
 
   public static class State
   {
+    private int value;
     private boolean active;
-    private Integer value;
+
+    public int getValue()
+    {
+      return value;
+    }
+
+    public void setValue(int value)
+    {
+      this.value = value;
+    }
 
     public boolean isActive()
     {
@@ -29,16 +39,6 @@ public interface LightDimmer extends Device
     public void setActive(boolean active)
     {
       this.active = active;
-    }
-
-    public Integer getValue()
-    {
-      return value;
-    }
-
-    public void setValue(Integer value)
-    {
-      this.value = value;
     }
   }
 }
